@@ -1,0 +1,169 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-size: 10px;
+            background-color:black;
+            
+        }
+        
+        .heading {
+            height: 100vh;
+            background-image: url(./image/head.jpg);
+            box-shadow: inset 200px 170px 250px black, inset -200px -170px 250px black;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: top;
+            position: relative;
+        }
+        
+        .text_box {
+            position: absolute;
+            text-transform: uppercase;
+            left: 50%;
+            top: 5%;
+            transform: translate(-50%);
+            text-align: center;
+        }
+        .heading_main {
+            font-size: 70px;;
+            letter-spacing: 60;
+            display: block;
+            color: #fff;
+            /* font-weight: 400; */
+            animation: moveInLeft 1s ease-out;
+        }
+        .action,.comedy,.drama,.scifi,.thriller{
+            padding: 2%;
+        }
+        .carousel-caption {
+            top: auto;
+            bottom: 0;
+        }
+        .description:link,
+        .description:visited {
+            font-size: 20px;
+            color:white;
+            text-decoration: none;
+        }
+        
+        .description:hover {
+            display:block;
+            color:white;
+            text-decoration: none;
+            transform: translateY(-3px);
+            box-shadow: 10px 10px 20px black;
+        }
+        
+        .description:active {
+            display:block;
+            color:white;
+            text-decoration: none;
+            transform: translateY(-1px);
+            box-shadow: 5px 5px 10px black;
+        }
+        
+        .description::after {
+            display:block;
+            color:white;
+            text-decoration: none;
+        }
+        .heading_sub {
+            font-size: 70px;
+            letter-spacing: 63;
+            display: block;
+            /* font-weight: 700; */
+            color: #fff;
+            animation: moveInRight 1s ease-out;
+            margin-bottom: 180px;
+        }
+        
+        @keyframes moveInLeft {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            80% {
+                transform: translateX(10px);
+            }
+            90% {
+                transform: translateX(-15px);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+        
+        @keyframes moveInRight {
+            0% {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+            80% {
+                transform: translateX(-10px);
+            }
+            90% {
+                transform: translateX(15px);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+        @keyframes moveInUp {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            80% {
+                transform: translateY(-10px);
+            }
+            90% {
+                transform: translateY(15px);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+        .btn{
+            animation: moveInUp 1s ease-out;
+        }
+        .btn:link,
+        .btn:visited {
+            text-transform: uppercase;
+            padding: 15px 60px;
+            background-color: white;
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 100px;
+            position: relative;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 10px 10px 20px black;
+        }
+        
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 5px 5px 10px black;
+        }
+        
+        .btn::after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+        }
+        #logout{
+            animation: moveInRight 1s ease-out;
+            background-color:rgb(199, 49, 49);
+            color: white;
+            left:85%;
+            top:7%;
+        }
